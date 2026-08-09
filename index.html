@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Task Panda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">🐼</div>
+      <div>
+        <h1>Task Panda</h1>
+        <small>Earn • Mine • Repeat</small>
+      </div>
+    </div>
+    <div class="balance">🪙 <span id="balance">0</span></div>
+  </header>
+
+  <main>
+    <section class="hero card">
+      <div>
+        <p class="eyebrow">PANDA MINING</p>
+        <h2>Mine Panda Coins ⛏️</h2>
+        <p>Start mining and come back every day to collect your coins.</p>
+      </div>
+      <div class="mine-orb" id="mineOrb">🐼</div>
+      <button class="primary big" id="mineBtn">START MINING ⛏️</button>
+      <div class="mining-status">
+        <span id="mineStatus">Mining is stopped</span>
+        <span id="timer">00:00:00</span>
+      </div>
+    </section>
+
+    <section class="card daily">
+      <div class="section-title">
+        <div>
+          <h2>Daily Routine</h2>
+          <p>Complete your daily social tasks.</p>
+        </div>
+        <span class="streak">🔥 <b id="streak">0</b> days</span>
+      </div>
+
+      <div class="task">
+        <div class="task-icon">▶</div>
+        <div class="task-info">
+          <h3>Daily Video Task</h3>
+          <p>Watch the Panda Money Task video every day.</p>
+          <strong>🪙 +11 Coins</strong>
+        </div>
+        <button class="claim" data-task="video">WATCH & CLAIM</button>
+      </div>
+
+      <div class="task">
+        <div class="task-icon">W</div>
+        <div class="task-info">
+          <h3>Follow Panda Money Task on WhatsApp</h3>
+          <p>Open the channel and follow it.</p>
+          <strong>Daily routine</strong>
+        </div>
+        <button class="claim" data-task="whatsapp">OPEN</button>
+      </div>
+
+      <div class="task">
+        <div class="task-icon">f</div>
+        <div class="task-info">
+          <h3>Facebook</h3>
+          <p>Open the Panda Money Task Facebook page.</p>
+          <strong>Daily routine</strong>
+        </div>
+        <button class="claim" data-task="facebook">OPEN</button>
+      </div>
+
+      <div class="task">
+        <div class="task-icon">◎</div>
+        <div class="task-info">
+          <h3>Instagram</h3>
+          <p>Follow Panda Money Task on Instagram.</p>
+          <strong>Daily routine</strong>
+        </div>
+        <button class="claim" data-task="instagram">OPEN</button>
+      </div>
+
+      <div class="task">
+        <div class="task-icon">✈</div>
+        <div class="task-info">
+          <h3>Telegram Bot</h3>
+          <p>Open the Panda Money Task bot.</p>
+          <strong>Daily routine</strong>
+        </div>
+        <button class="claim" data-task="telegramBot">OPEN</button>
+      </div>
+
+      <div class="task">
+        <div class="task-icon">✈</div>
+        <div class="task-info">
+          <h3>Telegram</h3>
+          <p>Open Zaid bin Hassan on Telegram.</p>
+          <strong>🪙 +120 Coins</strong>
+        </div>
+        <button class="claim hot" data-task="telegram">JOIN & CLAIM</button>
+      </div>
+    </section>
+
+    <section class="card stats">
+      <div><b id="totalEarned">0</b><span>Total coins</span></div>
+      <div><b id="todayEarned">0</b><span>Today</span></div>
+      <div><b id="completed">0</b><span>Tasks done</span></div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="active">⌂<span>Home</span></button>
+    <button onclick="scrollToSection('daily')">☷<span>Tasks</span></button>
+    <button onclick="scrollToSection('mineOrb')">⛏<span>Mining</span></button>
+    <button onclick="showProfile()">♙<span>Profile</span></button>
+  </nav>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+
+<section class="panda-feature">
+<h2>▶️ YouTube Tasks</h2>
+<div class="task">
+  <div class="task-info"><h3>YouTube Subscribe</h3><p>Subscribe to Panda Money Task YouTube channel.</p><strong>🪙 +120 Coins</strong></div>
+  <button class="claim" data-task="youtubeSubscribe">SUBSCRIBE & CLAIM</button>
+</div>
+<div class="task">
+  <div class="task-info"><h3>Daily Routine Video</h3><p>Watch today's Panda Money Task routine video every day.</p><strong>🪙 +12 Coins</strong></div>
+  <button class="claim" data-task="youtubeDaily">WATCH & CLAIM</button>
+</div>
+</section>
+</body>
+</html>
